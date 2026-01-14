@@ -9,6 +9,7 @@
   Para calcular estas operaciones de elevar al cuadrado, debes definir (y emplear) dentro de la función principal (hypotenuse)
   otra función (llamada square) que reciba un valor como parámetro y lo devuelva elevado al cuadrado.
   Si es correcta la llamada del ejemplo hypotenuse(3,4); debería devolver un valor de 5.
+
 	-- CATALÀ --
 	EXERCICI 1.3.1 ENUNCIAT:
 	Crea una funció (anomenada hypotenuse) que rebi com a paràmetres la base i l'alçada d'un triangle rectangle i torni el valor de la seva hipotenusa.
@@ -21,11 +22,13 @@
 
 //Do not modify this code:
 console.log(hypotenuse(3,4));
-
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
-
-
-
+function hypotenuse(base, altura) {
+  function square(valor){
+    return valor ** 2;
+  }
+  return Math.sqrt(square(base) + square(altura))
+}
 
 /**
  * TEST
