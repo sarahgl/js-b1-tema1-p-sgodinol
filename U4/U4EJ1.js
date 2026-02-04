@@ -12,10 +12,12 @@
   i que ens torni aquest Array en sentit invers.
   Per exemple: la crida a la funció reverseArray(4,7,21,3); ens hauria de tornar l'Array [3,21,7,4]
 */
-console.log(reverseArray(4,7,21,3)); //This will return [3,21,7,4]
+console.log(reverseArray(4, 7, 21, 3)); //This will return [3,21,7,4]
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
-
+function reverseArray(...arr) {
+  return arr.reverse();
+}
 
 
 
