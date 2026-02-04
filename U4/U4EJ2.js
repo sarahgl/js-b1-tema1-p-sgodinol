@@ -1,9 +1,9 @@
 //T1: Casos específicos de funciones / Casos específics de funcions
 //U4: Definición de funciones dentro de funciones / Definició de funcions dins de funcions
 /** 
-	-- CASTELLANO --
-	EJERCICIO 1.4.2 ENUNCIADO:
-	Crea una función llamada [evenNumbers] de manera que ésta reciba un número indeterminado de valores enteros y devuelva un Array con 
+  -- CASTELLANO --
+  EJERCICIO 1.4.2 ENUNCIADO:
+  Crea una función llamada [evenNumbers] de manera que ésta reciba un número indeterminado de valores enteros y devuelva un Array con 
   el número inferior y par más cercano a los números introducidos, es decir, si en una posición introducimos un 7 nos devolverá un 6,
   si introducimos un 6, entonces nos devolverá un 6. Como estrategia podéis seguir la siguiente: si la función evenNumbers la definimos con
   parámetros rest, tenemos por un lado que los parámetros recibidos pueden ser de un número indeterminado a priori, y por otro que
@@ -15,8 +15,8 @@
   restaremos 1 y para los pares restaremos 0).
   Por ejemplo: la llamada a la función evenNumbers(4,7,21,3); debería devolvernos [4,6,20,2]
   -- CATALÀ --
-	EXERCICI 1.4.2 ENUNCIAT:
-	Crea una funció anomenada [evenNumbers] de manera que aquesta rebi un nombre indeterminat de valors enters i torni un Array amb
+  EXERCICI 1.4.2 ENUNCIAT:
+  Crea una funció anomenada [evenNumbers] de manera que aquesta rebi un nombre indeterminat de valors enters i torni un Array amb
   el nombre inferior i parell més proper als números introduïts, és a dir, si en una posició introduïm un 7 ens tornarà un 6,
   si introduïm un 6, llavors ens tornarà un 6. Com a estratègia podeu seguir la següent: si la funció evenNumbers la definim amb
   paràmetres rest, tenim per una banda que els paràmetres rebuts poden ser d'un nombre indeterminat a priori, i per una altra que
@@ -28,10 +28,12 @@
   restarem 1 i per als parells en restarem 0).
   Per exemple: la crida a la funció evenNumbers(4,7,21,3); ens hauria de tornar [4,6,20,2]
 */
-console.log(evenNumbers(4,7,21,3)); //This will return [4,6,20,2]
+console.log(evenNumbers(4, 7, 21, 3)); //This will return [4,6,20,2]
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
-
+function evenNumbers(...enteros) {
+  return enteros.map(num => num - (num % 2));
+}
 
 
 
